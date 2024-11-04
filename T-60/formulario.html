@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <title>Cadastrar Vídeo</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="index.html">Home</a>
+                <a class="nav-item nav-link" href="videos.php">Vídeos</a>
+                <a class="nav-item nav-link active" href="formulario.html">Cadastrar Vídeo</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-5">
+        <h2>Cadastre um Vídeo</h2>
+        <form action="salvar_video.php" method="post">
+            <div class="form-group">
+                <label for="videoName">Nome do Vídeo</label>
+                <input type="text" class="form-control" id="videoName" name="videoName" required>
+            </div>
+            <div class="form-group">
+                <label for="videoLink">Link do Vídeo (YouTube)</label>
+                <input type="url" class="form-control" id="videoLink" name="videoLink" placeholder="https://www.youtube.com/watch?v=..." required>
+            </div>
+            <button type="submit" class="btn btn-primary">Cadastrar Vídeo</button>
+        </form>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</body>
+</html>

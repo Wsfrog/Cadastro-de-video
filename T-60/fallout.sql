@@ -1,0 +1,8 @@
+CREATE DATABASE fallout;
+USE fallout;
+
+CREATE TABLE videos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    link VARCHAR(255) NOT NULL
+);
