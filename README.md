@@ -26,7 +26,6 @@ O **Cadastro de Vídeos** é uma aplicação web que permite aos usuários cadas
    cd propro
    
 Crie o banco de dados: Execute o seguinte script SQL no seu servidor MySQL:
-
 CREATE DATABASE propro; -- Substitua por um nome de sua escolha
 USE propro;
 CREATE TABLE videos (
